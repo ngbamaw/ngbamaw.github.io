@@ -1,0 +1,9 @@
+{
+  "name": "front-end-montor",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.32.11"
+  }
+}
