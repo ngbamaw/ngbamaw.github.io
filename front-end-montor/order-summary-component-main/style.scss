@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: hsl(225, 100%, 94%);
+  font-family: "Red Hat Display", sans-serif;
+}
+.background-dp {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.background-mobile{
+    display: none;
+}
+.card {
+  margin: auto;
+  width: 30%;
+  max-width: 500px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color:white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow:hsl(224, 23%, 55%) 0px 15px 30px -15px;
+  & > * {
+    text-align: center;
+  }
+  .picture {
+    width: 101%;
+    margin-bottom: 24px;
+  }
+  h1 {
+    margin-bottom: 24px;
+    font-weight: 900;
+  }
+  .description {
+    padding: 0 80px;
+    margin-bottom: 24px;
+    color: hsl(224, 23%, 55%);
+  }
+  .plan {
+      display: flex;
+      align-items: center;
+      background-color:hsl(225, 100%, 98%);
+      padding: 24px ;
+      margin: 0 48px;
+      margin-bottom: 36px;
+      border-radius: 12px;
+      .icon-music {
+          margin-right: 12px;
+      }
+      .details {
+          font-size: 12px;
+          text-align: left;
+          p {
+              font-size: 18px;
+              color: hsl(224, 23%, 55%);
+          }
+      }
+      a {
+         margin-left: auto;
+         color: hsl(245, 75%, 52%);
+      }
+  }
+  .btn-payment {
+    background-color: hsl(245, 75%, 52%);
+    padding: 18px 0;
+    margin: 0 48px;
+    border: none;
+    border-radius: 12px;
+    color: hsl(225, 100%, 98%);
+    margin-bottom: 36px;
+    font-weight: 900;
+    font-size: 14px;
+    box-shadow: 0px 25px 24px -15px hsl(224, 23%, 55%);
+  }
+  .cancel-link {
+    color:hsl(224, 23%, 55%);
+    text-decoration: none;
+    margin-bottom: 36px;
+    font-weight: 700;
+  }
+}
+
+@media all and (max-width: 1366px) {
+    .background-dp {
+        display: none;
+    }
+    .background-mobile{
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+    }
+    .card {
+        width: 80%;
+        .description {
+          padding: 0 48px;
+        }
+    }
+}
