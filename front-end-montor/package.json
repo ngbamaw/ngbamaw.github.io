@@ -4,6 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
+    "cssnano": "^5.0.2",
+    "postcss": "^8.2.1",
     "sass": "^1.32.11"
-  }
+  },
+  "dependencies": {}
 }
